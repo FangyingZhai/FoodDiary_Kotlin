@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories Remaining"
+        android:textSize="24sp"
+    />
+
+    <TextView
+	    android:id="@+id/calorie_remaining_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginEnd="60dp"
+
+    />
+
+	<ListView
+		android:id="@+id/list_view"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/calorie_remaining_value"
+		android:layout_above="@+id/total_calories_value"
+		android:layout_margin="16dp"
+		>
+	</ListView>
+
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Total Calories"
+		android:textSize="24sp"
+		android:layout_above="@+id/button"
+		android:layout_marginBottom="40dp"
+	/>
+
+	<TextView
+		android:id="@+id/total_calories_value"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="0"
+		android:textSize="24sp"
+		android:layout_alignParentRight="true"
+		android:layout_above="@+id/button"
+		android:layout_marginBottom="40dp"
+        android:layout_marginEnd="60dp"
+
+        />
+
+
+	<Button
+		android:id="@+id/button"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:text="Add Food Item"
+		android:layout_alignParentBottom="true"
+		android:layout_centerInParent="true"/>
+
+</RelativeLayout>
