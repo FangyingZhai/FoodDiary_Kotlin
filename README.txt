@@ -9,6 +9,7 @@ A description of the creative portion of the assignment
 * Why did you choose this feature?
 * How did you implement it?
 
-1.When I add duplicate item, it will not show up on the list, it will add to the original items that is already in the list
+1.When I add duplicate item, it will not show up on the list, it will add to the original items that is already in the list, I add a if statement to check whether
+	or not the new item is already in the list, and take different action depend on that
 2.I created recycler view in case that the user add too many food item into the list
 3.When I enter the wrong input, it will not show on the screen, and definetly not enter into the main activity
